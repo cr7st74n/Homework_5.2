@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Generic</title>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <!-- Navbar x4  -->
+  <header>
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to Cr7ston Bookstore</h1>
+        </div>
+    </div>
+
+    <nav>
+        <div class="mynav">
+            <img src="./css/img/iconBook.jpg" alt="logo" style="width:60px;">
+            <a class="nav-link" href="Gonzalez_Cristian_a5-2.html"  >Main Page</a>
+            <a class="nav-link" href="newbook.html">Insert</a>
+            <a class="nav-link" href="search.html">Search</a>
+            <a class="nav-link" href="search_generic.html">Our Books</a>
+        </div>
+    </nav>
+  </header>
+
+  <!--main part  -->
+  <body>
+      <h1>Search for the Book</h1>
+      <form action="results_generic.php" method="post">
+        Choose Search Type:<br />
+        <select name="searchtype">
+          <option value="name">Name
+          <option value="description">Title
+          <option value="isbn">ISBN
+        </select>
+        <br />
+        Enter Search Term:<br />
+        <input name="searchterm" type="text" size="40">
+        <br />
+        <input type="submit" name="submit" value="Search">
+      </form>
+  </body>
+</html>
+
